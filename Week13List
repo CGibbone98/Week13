@@ -1,0 +1,30 @@
+import java.util.ArrayList;
+import java.util.List;
+
+class Main {
+  public static void main(String[] args) {
+     List <String> list = new ArrayList();  
+           list.add("Charles"); 
+           list.add("Chuck"); 
+           list.add("Chuckie"); 
+           list.add("Chuckie"); 
+           list.add("Chad"); 
+           list.add("Charlie"); 
+           list.add("Joe");
+
+           List <String> listClone = new ArrayList<String>(); 
+
+           for (String string : list) {
+               if(string.matches("(Joe)"))
+              System.out.print("Joe is not a nickname for Charles");
+               
+      {
+                   listClone.add(string);
+               }
+           }
+        System.out.println(listClone);
+  }
+}
+
+//Assignment was difficult, not sure if I did it right, had to look online. I kept getting the error that I couldn't complile because it 
+was using unsafe operations or something.
